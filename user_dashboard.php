@@ -20,29 +20,30 @@ header("Location: login.php");
 
 </div>
 
-<div class="hero">
 
-<h1>Welcome, <?php echo $_SESSION['name']; ?>!</h1> 
+<!-- HERO SECTION -->
+<div class="hero hero-slideshow">
+  <div class="hero-slideshow-wrapper">
+    <div class="slide" style="background-image: url('slide1.jpg');"></div>
+    <div class="slide" style="background-image: url('slide2.jpg');"></div>
+    <div class="slide" style="background-image: url('slide3.jpg');"></div>
+  </div>
+  
+  <div class="hero-overlay"></div>
 
-
-
-
+  <div class="hero-content">
+    <h1>Welcome, <?php echo $_SESSION['name']; ?>!</h1>
+    <p>Stay updated with the latest barangay programs and community events.</p>
+  </div>
 </div>
+
 
 <div class="container">
 
-<h2>Upcoming Events</h2>
+<h2 class="section-title">Upcoming Events</h2>
 
-<div class="event-card-table">
 
-<div class="event-row header">
-
-<div class="col name">Event</div>
-<div class="col date">Date</div>
-<div class="col status">Status</div>
-<div class="col action">Action</div>
-
-</div>
+<div class="event-grid">
 
 <?php
 
@@ -52,24 +53,24 @@ while($row=$result->fetch_assoc()){
 
 ?>
 
-<div class="event-row">
+<div class="event-card">
 
-<div class="col name">
-<?php echo $row['title']; ?>
-</div>
+<img src="uploads/<?php echo $row['image']; ?>" class="event-img">
 
-<div class="col date">
+<div class="event-card-content">
+
+<h3><?php echo $row['title']; ?></h3>
+
+<p class="event-date">
 <?php echo date("F j, Y",strtotime($row['date'])); ?>
-</div>
+</p>
 
-<div class="col status">
+<span class="status <?php echo strtolower($row['status']); ?>">
 <?php echo $row['status']; ?>
-</div>
+</span>
 
-<div class="col action">
-
-<a href="view_event.php?id=<?php echo $row['id']; ?>" class="view-btn">
-View
+<a href="view_event.php?id=<?php echo $row['id']; ?>" class="details-btn">
+View Details <span class="arrow">→</span>
 </a>
 
 </div>
@@ -79,4 +80,5 @@ View
 <?php } ?>
 
 </div>
+
 </div>

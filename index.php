@@ -14,101 +14,74 @@ session_start();
 
 <!-- NAVBAR -->
 <div class="navbar">
+    <div class="logo">
+        <h2>Barangay Concepcion Dos</h2>
+    </div>
 
-<div class="logo">
-<h2>Barangay Concepcion Dos</h2>
+    <div class="menu">
+        <a href="index.php">Home</a>
+    </div>
 </div>
-
-<div class="menu">
-<a href="index.php">Home</a>
-</div>
-
-</div>
-
 
 <!-- HERO SECTION -->
 <section class="hero">
+    <div class="hero-overlay"></div> <!-- Dark overlay for readability -->
 
-<div class="hero-content">
-
-<h1>Welcome to Barangay Concepcion Dos</h1>
-
-
-<p>
-Stay updated with the latest barangay programs, community activities,
-and upcoming events.
-</p>
-
-<div class="hero-buttons">
-
-<a href="login.php" class="btn-primary">Login</a>
-
-<a href="register.php" class="btn-secondary">Register</a>
-
-</div>
-
-</div>
-
+    <div class="hero-content">
+        <h1>Welcome to Barangay Concepcion Dos</h1>
+        <p>
+          Stay updated with the latest barangay programs, community activities,
+          and upcoming events.
+        </p>
+        <div class="hero-buttons">
+            <a href="login.php" class="btn-primary">Login</a>
+            <a href="register.php" class="btn-secondary">Register</a>
+        </div>
+    </div>
 </section>
-
 
 <!-- ABOUT SECTION -->
 <section class="about">
-
-<div class="container">
-
-<h2>About Our Community</h2>
-
-<p>
-Barangay Concepcion Dos is an active and vibrant community that organizes
-various programs such as clean-up drives, sports activities, assemblies,
-health missions, and cultural celebrations.
-</p>
-
-<p>
-Our event management system allows residents to stay informed,
-participate in community events, and strengthen our neighborhood.
-</p>
-
-</div>
-
+    <div class="container">
+        <h2>About Our Community</h2>
+        <p>
+        Barangay Concepcion Dos is an active and vibrant community that organizes
+        various programs such as clean-up drives, sports activities, assemblies,
+        health missions, and cultural celebrations.
+        </p>
+        <p>
+        Our event management system allows residents to stay informed,
+        participate in community events, and strengthen our neighborhood.
+        </p>
+    </div>
 </section>
-
 
 <!-- FEATURES SECTION -->
 <section class="features">
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:40px; color:#1e3a8a;">Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>📅 Community Events</h3>
+                <p>Stay updated with upcoming barangay activities.</p>
+            </div>
 
-<div class="container">
+            <div class="card">
+                <h3>📢 Announcements</h3>
+                <p>Important announcements for all residents.</p>
+            </div>
 
-<div class="cards">
-
-<div class="card">
-<h3>📅 Community Events</h3>
-<p>Stay updated with upcoming barangay activities.</p>
-</div>
-
-<div class="card">
-<h3>📢 Announcements</h3>
-<p>Important announcements for all residents.</p>
-</div>
-
-<div class="card">
-<h3>🤝 Community Participation</h3>
-<p>Join events and support your barangay.</p>
-</div>
-
-</div>
-
-</div>
-
+            <div class="card">
+                <h3>🤝 Community Participation</h3>
+                <p>Join events and support your barangay.</p>
+            </div>
+        </div>
+    </div>
 </section>
-
 
 <!-- FOOTER -->
 <footer class="footer">
-
-<p>© 2026 Barangay Concepcion Dos | Community Event System</p>
-
+    <p>© 2026 Barangay Concepcion Dos | Community Event System</p>
 </footer>
 
 </body>

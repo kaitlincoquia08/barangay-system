@@ -49,6 +49,14 @@ $message = "User does not exist.";
 }
 ?>
 
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Barangay Concepcion Dos</h2>
+    <div class="menu">
+        <a href="index.php">Home</a>
+    </div>
+</div>
+
 <link rel="stylesheet" href="style.css">
 
 <div class="form-container">
